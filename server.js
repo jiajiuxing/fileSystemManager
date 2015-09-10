@@ -61,7 +61,7 @@ var server = http.createServer(function(req, res){
 	        var name = postData;
 	        // console.log(name);
 	        var pathName2 = path.join(filePath, name);
-	        delp4(pathName2);
+	        delp(pathName2);
 	    });
 		return;
 	}
