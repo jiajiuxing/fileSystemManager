@@ -1,0 +1,50 @@
+
+// 同步方法不支持回调
+
+	// function delp(path1){
+	// 	if(fs.statSync(path1).isFile()){
+	// 		fs.unlinkSync(path1, function(err){
+	// 			if(err){
+	// 				console.log('文件删除错误： ' + err);
+	// 				return;
+	// 				// res.end('ok');
+	// 			}
+	// 			console.log(path1 + ' 文件删除成功');
+	// 		});
+	// 	}else{
+	// 		fs.readdirSync(path1, function(err, files){
+	// 			files.forEach(function(file){
+	// 					path2 = path.join(path1, file);
+	// 					console.log(path2 + ' ====列出====');
+	// 					delp(path2);
+	// 			});
+	// 			// var leng = files.length;
+	// 			// if(leng == 0){
+	// 			// 	fs.rmdir(path1, function(err){
+	// 			// 		if(err){
+	// 			// 			console.log('error: ' + err);
+	// 			// 			return;
+	// 			// 		}
+	// 			// 		console.log(path1 + ' 目录删除成功1');
+	// 			// 		// res.end('ok');
+	// 			// 	});
+	// 			// }else{
+	// 			// 	files.forEach(function(file){
+	// 			// 		path2 = path.join(path1, file);
+	// 			// 		console.log(path2 + ' ====列出====');
+	// 			// 		delp(path2);
+	// 			// 	});
+	// 			// }
+	// 		});
+
+	// 		fs.rmdirSync(path1, function(err){
+	// 					if(err){
+	// 						console.log('目录删除错误， error: ' + err);
+	// 						return;
+	// 					}
+	// 					console.log(path1 + ' 目录删除成功2');
+	// 					// res.end('ok');
+	// 		});
+
+	// 	}
+	// }
